@@ -22,10 +22,6 @@ db_schema:
       name: category
       target: categories
       type: link_single
-    - admin_ui: {width: 200}
-      name: user
-      target: null
-      type: link_single
     server: full
     title: Articles
   categories:
