@@ -35,7 +35,8 @@ components:
   name: label_4
   properties: {text: 'Image:'}
   type: Label
-- layout_properties: {grid_position: 'DKXJYU,DIPWIS'}
+- event_bindings: {change: image_uploader_change}
+  layout_properties: {grid_position: 'DKXJYU,DIPWIS'}
   name: image_uploader
   properties: {}
   type: FileLoader
