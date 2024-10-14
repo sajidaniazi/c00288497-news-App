@@ -1,8 +1,6 @@
 from ._anvil_designer import ArticleEditTemplate
 from anvil import *
 import anvil.server
-import anvil.tables as tables
-import anvil.tables.query as q
 from anvil.tables import app_tables
 
 
@@ -17,5 +15,4 @@ class ArticleEdit(ArticleEditTemplate):
 
   def image_uploader_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
-    # Add the image to self.item
     self.item['image'] = file

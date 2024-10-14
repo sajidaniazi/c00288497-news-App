@@ -4,7 +4,9 @@ unique_ids:
     theme.css: Y4TYKVDZWJQ5N4PHDYUTUYMRVBCFDQKG
   forms:
     ArticleEdit: '1728902420685418350815595.4783'
+    ArticleView: '1728907713299130337338074.28915'
     Homepage: QF7WBVQRWYPKR7OO3PAHEOECAEUGR6XR
+    Homepage.ItemTemplate1: '1728908426322822803927564.7465'
   modules: {}
   scripts: {}
   server_modules:

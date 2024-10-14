@@ -1,33 +1,37 @@
 allow_embedding: false
 db_schema:
   articles:
-    client: none
+    client: search
     columns:
-    - admin_ui: {order: 0, width: 200}
+    - admin_ui: {width: 200}
       name: title
       type: string
-    - admin_ui: {order: 1, width: 200}
+    - admin_ui: {width: 200}
       name: content
       type: string
-    - admin_ui: {order: 2, width: 200}
+    - admin_ui: {width: 200}
       name: image
       type: media
-    - admin_ui: {order: 3, width: 200}
+    - admin_ui: {width: 200}
       name: created
       type: datetime
-    - admin_ui: {order: 4, width: 200}
+    - admin_ui: {width: 200}
       name: updated
       type: datetime
-    - admin_ui: {order: 5, width: 200}
-      name: categories
+    - admin_ui: {width: 200}
+      name: category
       target: categories
+      type: link_single
+    - admin_ui: {width: 200}
+      name: user
+      target: null
       type: link_single
     server: full
     title: Articles
   categories:
     client: search
     columns:
-    - admin_ui: {order: 0, width: 200}
+    - admin_ui: {width: 200}
       name: name
       type: string
     server: full
