@@ -1,0 +1,43 @@
+components:
+- layout_properties: {grid_position: 'MQLNHR,DVSORT'}
+  name: label_1
+  properties: {text: 'Title:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''title'']', property: text, writeback: true}
+  layout_properties: {grid_position: 'MQLNHR,YYZLMY'}
+  name: title_box
+  properties: {}
+  type: TextBox
+- layout_properties: {grid_position: 'YCYNZM,MXZTQL'}
+  name: label_2
+  properties:
+    text: |
+      Content:
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''content'']', property: text, writeback: true}
+  layout_properties: {grid_position: 'YCYNZM,MQXDEL'}
+  name: content_box
+  properties: {}
+  type: TextArea
+- layout_properties: {grid_position: 'WODRZQ,DWGZEC'}
+  name: label_3
+  properties: {text: 'Category:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''category'']', property: selected_value, writeback: true}
+  layout_properties: {grid_position: 'WODRZQ,SGTVXA'}
+  name: category_box
+  properties: {include_placeholder: true, placeholder: choose category}
+  type: DropDown
+- layout_properties: {grid_position: 'DKXJYU,VKNGDX'}
+  name: label_4
+  properties: {text: 'Image:'}
+  type: Label
+- layout_properties: {grid_position: 'DKXJYU,DIPWIS'}
+  name: image_uploader
+  properties: {}
+  type: FileLoader
+container: {type: ColumnPanel}
+is_package: true
