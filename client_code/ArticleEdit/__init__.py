@@ -4,6 +4,7 @@ import anvil.server
 from anvil.tables import app_tables
 
 
+
 class ArticleEdit(ArticleEditTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
