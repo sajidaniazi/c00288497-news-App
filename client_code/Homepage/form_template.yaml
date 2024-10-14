@@ -1,5 +1,9 @@
 components:
-- components: []
+- components:
+  - layout_properties: {grid_position: 'HLLTIP,FRLSGY'}
+    name: add_article_button
+    properties: {role: outlined-button, text: 'Add Article '}
+    type: Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
