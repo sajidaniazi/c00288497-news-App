@@ -2,13 +2,13 @@ components:
 - components:
   - data_bindings:
     - {code: 'self.item[''title'']', property: text, writeback: false}
-    layout_properties: {grid_position: 'YHHHHA,UYXQSY'}
+    layout_properties: {grid_position: 'YHHHHA,LWLFCT'}
     name: title_label
     properties: {align: left, role: title}
     type: Label
   - data_bindings:
     - {code: 'self.item[''category''][''name'']', property: text, writeback: false}
-    layout_properties: {grid_position: 'YHHHHA,LWLFCT'}
+    layout_properties: {grid_position: 'YHHHHA,GKKBQZ'}
     name: category_label
     properties: {bold: true}
     type: Label
@@ -39,7 +39,7 @@ components:
     type: Image
   layout_properties: {grid_position: 'VYTAUN,YGCZPW'}
   name: column_panel_1
-  properties: {col_widths: '{"LWLFCT":25,"LVTEAU":25}', role: elevated-card}
+  properties: {col_widths: '{"LWLFCT":25,"LVTEAU":25,"GKKBQZ":20}', role: elevated-card}
   type: ColumnPanel
 container: {type: ColumnPanel}
 is_package: true
